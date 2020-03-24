@@ -1,0 +1,91 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body{
+      font-family: Arial, Helvetica, sans-serif;
+
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b7deed+0,71ceef+39,21b4e2+54,b7deed+100 */
+    background: rgb(183,222,237); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(183,222,237,1) 0%, rgba(113,206,239,1) 39%, rgba(33,180,226,1) 54%, rgba(183,222,237,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(183,222,237,1) 0%,rgba(113,206,239,1) 39%,rgba(33,180,226,1) 54%,rgba(183,222,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(183,222,237,1) 0%,rgba(113,206,239,1) 39%,rgba(33,180,226,1) 54%,rgba(183,222,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#b7deed',GradientType=0 ); /* IE6-9 */
+    height: 100%;
+    background-attachment: fixed;/*no se mueve el degradado*/
+}
+header{
+    text-align: center;/*tambien centra imagenes*/
+    padding: 40px 0;
+}
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h2{
+    margin-top: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+img{
+    max-width: 100%;
+}
+.lista-productos{
+    margin-top: 20px;
+    padding: 0;
+}
+.lista-productos li{
+    float: left;
+    width: 50%;
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+}
+.lista-productos li:nth-child(2n+1){
+    clear: both;
+}
+@media (min-width:768px){
+    .lista-productos li{
+        width: 33.3%;
+    }
+    .lista-productos li:nth-child(2n+1){
+        clear: unset;
+    }
+    .lista-productos li:nth-child(3n+1){
+        clear: both;
+    }
+}
+.lista-productos li img{
+    border: 8px solid #135de7;
+    transition: border-color 1s ease-in-out;
+}
+.lista-productos li img:hover{
+    border: 8px solid #052a70;
+}
+.lista-productos li p{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+span.precio{
+    color: #840bca;
+    font-size: 30px;
+}
+.boton{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    background-color: #840bca;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: background-color .3s ease-in-out;
+}
+.boton:hover{
+    background-color: #540581;
+}
